@@ -4,19 +4,17 @@ body {
   background-size: cover;
 }
 .jumbotron {
-  opacity: 0.88;
-  background-image: url('images/FlagOfKenya.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
+  opacity: 0.95;
 }
 .prof {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .prof>h4 {
   font-family: Quicksand;
 }
-.prof>h5 {
+.prof>h6 {
   font-family: Montserrat;
 }
 .prof:hover {
