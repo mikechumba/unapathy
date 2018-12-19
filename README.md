@@ -23,13 +23,19 @@ Information regarding the above-mentioned politicians include, but is not limite
 Deployment of the website was done via GitHub Pages. To deploy the program, fork, clone, make your changes, and push to Git-Hub Pages using the following series of commands from your parent project folder.
 1. First fork the repo to your own on Git Hub
 2. Clone the repo to your local machine.  
-git clone https://github.com/mikechumba/unapathy.git
+```
+$ git clone https://github.com/mikechumba/unapathy.git
+```
 or if you have a SSH KEY,
+```
 git clone git@github.com:mikechumba/unapathy.git
+```
 3. Make changes and commit
 4. Push changes,
+```
 git push origin master
 git push origin gh-pages
+```
 5. Deploy to Git Hub Pages.
 
 The current deployed page can be found in the following link: [Unapathy : Politician Tracker](https://github.io/mikechumba/unapathy)
