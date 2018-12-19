@@ -67,25 +67,27 @@ header button {
 }
 
 .header-text {
-    margin: 2% 15px; 
+    width: 80%;
+    margin: 2% auto; 
 }
 
 .header-text h1, .header-text h3 {
     font-family: 'Playfair Display', serif;
+    margin-bottom: 30px;
 }
 
 .header-text h1 {
     font-weight: 800;
     font-size: 50px;
     color: #707070;
-    width: 50%;
-    line-height: 1.5;   
+    line-height: 1.5;  
 }
 
 .header-text p {
     font-family: 'Quicksand', sans-serif;
     font-size: 16px;
     font-weight: 400;
+    margin-bottom: 30px;
 }
 
 .header-text h3 {
@@ -110,9 +112,13 @@ footer {
     margin: 0;
 }
 
+.f-nav {
+    padding: 15px 0;
+}
+
 .f-nav ul li {
     display: block;
-    padding: 10px;
+    padding: 3px 0;
 }
 
 .f-nav ul li a {
@@ -121,6 +127,111 @@ footer {
     color: #30292F;
     font-weight: 500;
     font-size: 12px;
-    padding: 5px;
+    padding: 5px 0;
 }
+
+footer p {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    padding: 3px 0;
+}
+
+.sidebar {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 18%;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #fff;
+    border-right: 2px;
+    border-color: #707070;
+    float: left;
+}
+
+.profile-head {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.profile-head img {
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+}
+
+.profile-head h4 {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.profile-head p {
+    font-size: 12px;
+}
+
+.side-menu {
+    margin-top: 30px;
+}
+
+.side-menu ul li {
+    display: block;
+    border: 2px 0 2px 0 solid #707070;
+    font-size: 14px;
+    padding: 9px 0;
+    border-top: 2px;
+    border-bottom: 2px;
+    border-color: #707070;
+}
+
+.side-menu ul li::before {
+    content: '';
+    border: 2px solid #707070;
+}
+
+.side-menu ul li a {
+    text-decoration: none;
+    color: #30292F;
+}
+
+.profile-content {
+    width: 82%;
+}
+
+.timeline {
+    margin: 0 15px;
+    box-sizing: border-box;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.timeline-content {
+    width: 50%;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #707070;
+    border-radius: 50%;
+}
+
+.timeline-content::before {
+    content: '';
+    border: 1px solid #707070;
+    position: absolute;
+    left: 50%;
+}
+
+
+
 
