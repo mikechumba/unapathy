@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900|Quicksand:400,500,700');
+
+html, body {
+  font-family: 'Playfair Display', serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#page {
+  width: 100%;
+  height: 100%;
+  background-color: #30292F;
+  overflow-x: hidden;
+}
+
+.nav-bar {
+  width: 100%;
+  height: 80px;
+  margin-top: 15px;
+}
+
+.nav-bar img {
+  width: 40px;
+  height: 40px;
+  float: left;
+  padding: 10px 8px;
+}
+
+nav ul {
+  width: 100%;
+  padding: 0 8px;
+  text-align: right;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 10px 15px;
+}
+
+nav ul li a {
+  text-transform: uppercase;
+  font-family: 'Quicksand', sans-serif;
+  text-decoration: none;
+  color: #707070;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+header {
+  margin: 13% 15px;
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 800;
+  font-size: 50px;
+  color: #707070;
+  width: 50%;
+  line-height: 1.5;
+}
+
+header button {
+  color: #707070;
+}
+
+.header-text {
+  width: 80%;
+  margin: 2% auto;
+}
+
+.header-text h1, .header-text h3 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 30px;
+}
+
+.header-text h1 {
+  font-weight: 800;
+  font-size: 50px;
+  color: #707070;
+  line-height: 1.5;
+}
+
+.header-text p {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.header-text h3 {
+  font-weight: 600;
+  color: #707070;
+  font-size: 20px;
+}
+
+.cta-btn {
+  border: 2px solid #707070;
+  padding: 8px 12px;
+  background-color: transparent;
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+}
+
+footer {
+  width: 100%;
+  height: 30%;
+  background-color: #707070;
+  padding: 0;
+  margin: 0;
+}
+
+.f-nav {
+  padding: 15px 0;
+}
+
+.f-nav ul li {
+  display: block;
+  padding: 3px 0;
+}
+
+.f-nav ul li a {
+  text-decoration: none;
+  font-family: 'Quicksand', sans-serif;
+  color: #30292F;
+  font-weight: 500;
+  font-size: 12px;
+  padding: 5px 0;
+}
+
+footer p {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  padding: 3px 0;
+}
+
+.sidebar {
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 16%;
+  font-family: 'Quicksand', sans-serif;
+  background-color: #fff;
+  border-right: 2px;
+  border-color: #707070;
+  float: left;
+  border-right: 1px solid #EFEFEF;
+}
+
+.profile-head {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.profile-head img {
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+}
+
+.profile-head h4 {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.profile-head p {
+  font-size: 12px;
+}
+
+.side-menu {
+  margin-top: 50px;
+  width: 100%;
+}
+
+.side-menu button {
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  padding: 8px 0;
+  margin: 15px 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.side-menu button:hover {
+  border-right: 2px solid #707070;
+  z-index: 2;
+  box-sizing: border-box;
+  background-color: #EFEFEF;
+}
+
+.active {
+  border-right: 2px solid #F25F5C;
+  box-sizing: border-box;
+}
+
+.side-menu ul li:active {
+  background-color: rgba(253, 126, 122, 0.4);
+}
+
+.side-menu ul li:hover::after {
+  content: '';
+  position: absolute;
+  border: 3px solid #707070;
+  right: 18%;
+}
+
+.side-menu ul li a {
+  text-decoration: none;
+  color: #30292F;
+}
+
+.profile-content {
+  width: 82%;
+  float: right;
+}
+
+.bio {
+  width: 85%;
+  box-sizing: border-box;
+  margin: 15px auto;
+}
+
+.timeline {
+  position: relative;
+  margin: 50px auto;
+  padding: 40px 0;
+  width: 1000px;
+  box-sizing: border-box;
+  display: none;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  background: #c5c5c5;
+}
+
+.timeline ul {
+  margin: 0;
+  padding: 0;
+}
+
+.timeline ul li {
+  list-style: none;
+  position: relative;
+  width: 50%;
+  padding: 20px 40px;
+  box-sizing: border-box;
+}
+
+.timeline ul li:nth-child(odd) {
+  float: left;
+  text-align: right;
+  clear: both;
+}
+
+.timeline ul li:nth-child(even) {
+  float: right;
+  text-align: left;
+  clear: both;
+}
+
+.content {
+  padding-bottom: 20px;
+}
+
+.timeline ul li:nth-child(odd)::before {
+  content: '';
+  position: absolute;
+  top: 24px;
+  right: -6px;
+  width: 10px;
+  height: 10px;
+  background: rgba(65, 63, 84, 1);
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(65, 63, 84, 0.2);
+}
+
+.timeline ul li:nth-child(even)::before {
+  content: '';
+  position: absolute;
+  top: 24px;
+  left: -4px;
+  width: 10px;
+  height: 10px;
+  background: rgba(65, 63, 84, 1);
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(65, 63, 84, 0.2);
+}
+
+.timeline ul li h3 {
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  color: rgba(65, 63, 84, 1);
+}
+
+.timeline ul li p {
+  margin: 10px 0 0;
+  padding: 0;
+}
+
+.timeline ul li .time h4 {
+  margin: 0;
+  padding-bottom: 0;
+  font-size: 14px;
+}
+
+.timeline ul li:nth-child(odd) .time {
+  position: absolute;
+  top: 12px;
+  right: -150px;
+  margin: 0;
+  padding: 8px 16px;
+  background: rgba(65, 63, 84, 1);
+  color: #fff;
+  border-radius: 18px;
+  box-shadow: 0 0 0 3px rgba(65, 63, 84, 0.3);
+}
+
+.timeline ul li:nth-child(even) .time {
+  position: absolute;
+  top: 12px;
+  left: -150px;
+  margin: 0;
+  padding: 8px 16px;
+  background: rgba(65, 63, 84, 1);
+  color: #fff;
+  border-radius: 18px;
+  box-shadow: 0 0 0 3px rgba(65, 63, 84, 0.3);
+}
+
+.card {
+  background-color: #EFEFEF;
+  width: 30%;
+}
+
+.profiles {
+  margin: 15px;
+}
+
+body {
+  background-image: url('../images/FlagOfKenya.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron {
+  opacity: 0.95;
+}
+
+.prof {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.prof>h4 {
+  font-family: Quicksand;
+}
+
+.prof>h6 {
+  font-family: Montserrat;
+}
+
+.prof:hover {
+  cursor: pointer;
+  font-style: italic;
+  text-transform: lowercase;
+  text-decoration: underline;
+  color: blue;
+}
