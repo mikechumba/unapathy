@@ -10,9 +10,9 @@
     <title>Unapathy</title>
 </head>
 <body>
-    <div id="page">
+    <div id="">
         <div class="nav-bar">
-            <img src="images/logo_light.png" alt="logo">
+            <a href="index.html"><img src="images/logo.png" alt="logo"></a>
             <nav>
                 <ul>
                     <li><a href="Profiles">Profiles</a></li>
@@ -21,21 +21,34 @@
                 </ul>
             </nav>
         </div>
-        <header>
-            <h1>We are here to help you know your Representatives</h1>
-            <button class="cta-btn" onclick="window.location.href='about.html'">Learn More</button> 
-        </header>
-    </div>
-    <footer>
-        <div class="f-nav text-center">
-            <ul>
-                <li><a href="Profiles">About</a></li>
-                <li><a href="About">Legal</a></li>
-                <li><a href="Contact">Terms</a></li>
-            </ul>
+        <div class="sidebar">
+            <div class="profile-head text-center">
+                <img src="images\profile_img\uhuru-kenyatta-6-1-640x533.png" alt="">
+                <h4 id="profile_name">Uhuru Kenyatta</h4>
+                <p>President</p>
+            </div>
+            <div class="side-menu">
+                <ul>
+                    <li><a href="">Bio</a></li>
+                    <li><a href="">Timeline</a></li>
+                    <li><a href="">Promises</a></li>
+                </ul>
+            </div>
         </div>
-        <p class="text-center">&copy; Unapathy 2018.</p>
-    </footer>
+        <div class="profile-content">
+            <div class='timeline left'>
+                <div class="timeline-content">
+                    <p>Charges brought up in relation to the 2007 post-election violence.</p>
+                </div>
+            </div>
+            <div class='timeline right'>
+                <div class="timeline-content">
+                    <p>9.2 Billion budget error while serving as Finance Minister.</p>
+                </div>
+            </div>
+            
+            
+        </div>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
